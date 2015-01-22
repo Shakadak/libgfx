@@ -6,7 +6,7 @@
 #    By: npineau <npineau@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 12:15:41 by npineau           #+#    #+#              #
-#    Updated: 2015/01/22 16:44:16 by npineau          ###   ########.fr        #
+#    Updated: 2015/01/22 17:09:47 by npineau          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ DIRFT		:=	../libft
 
 ### FILES ###
 
+INC			:=	$(DIRINC)/libmlx.h
 LIBFT		:=	$(DIRFT)/libft.a
 
 ### FILES: SOURCES ###

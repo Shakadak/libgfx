@@ -1,4 +1,5 @@
-COL	:=	linear_interpolation.c
+COL	:=	linear_interpolation.c \
+		new_color.c
 
 OBJ := $(OBJ) $(COL:.c=.o)
 

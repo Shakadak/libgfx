@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 11:26:29 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/22 14:25:32 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/22 18:42:37 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,9 +62,12 @@ void				put_pixel_to_image(t_img *img, t_pix const pixel);
 void				clear_image(t_img *img);
 void				draw_line(t_img *img, t_pix start, t_pix end);
 
+t_color	new_color(char const r, char const g, char const b);
 t_color				linear_interpolation(t_pix const target,
 		t_pix const start,
 		t_pix const end);
+
+double				norme(t_pos const a, t_pos const b);
 
 void				ft_fatal(char const *const msg, int const flag);
 
