@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   new_window.c                                       :+:      :+:    :+:   */
+/*   apply_image.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/22 11:22:26 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/22 19:22:46 by npineau          ###   ########.fr       */
+/*   Created: 2015/01/22 18:45:13 by npineau           #+#    #+#             */
+/*   Updated: 2015/01/22 19:24:44 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libmlx.h"
 
-t_win	new_window(void *mlx, int width, int height, char *title)
+void	apply_image(t_win const *win, t_img const *img, t_pos const origin)
 {
-	t_win	win;
-
-	win.win = mlx_new_window(mlx, width, height, title);
-	if (win.win == NULL)
-		ft_fatal("mlx_new_window", 1);
-	win.mlx = mlx;
-	win.width = width;
-	win.height = height;
-	win.title = title;
-	return (win);
+	mlx_put_image_to_window(win->mlx, win->win, img->img, origin.x, origin.y);
 }
