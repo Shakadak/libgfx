@@ -6,8 +6,14 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 16:13:54 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/22 16:13:56 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/22 16:44:41 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <math.h>
+#include "libmlx.h"
 
+double	norme(t_pos const a, t_pos const b)
+{
+	return (sqrt((b.x - a.x) * (b.x - a.x) + (b.y - a.y) * (b.y - a.y)));
+}
