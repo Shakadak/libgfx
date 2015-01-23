@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 11:26:29 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/23 14:05:57 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/23 15:28:51 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,12 +63,14 @@ t_win				new_window(void *mlx, int width, int height, char *title);
 
 t_pos				new_pos(int const x, int const y, int const z);
 
+t_pix	new_pixel(t_pos const pos, t_color const color);
 
-void				put_pixel_to_image(t_img *img, t_pix const pixel);
 
-void				clear_image(t_img *img);
+void				put_pixel_to_image(t_img img, t_pix const pixel);
 
-void				draw_line(t_img *img, t_pix start, t_pix end);
+void				clear_image(t_img img);
+
+void				draw_line(t_img img, t_pix start, t_pix end);
 
 void				apply_image(t_win const win,
 		t_img const img,

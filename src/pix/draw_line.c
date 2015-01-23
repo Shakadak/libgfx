@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 13:25:45 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/23 13:11:38 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/23 15:34:54 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static void		update_pixel_pos(t_pos *current,
 	}
 }
 
-void			draw_line(t_img *img,
+void			draw_line(t_img img,
 		t_pix const start,
 		t_pix const end)
 {

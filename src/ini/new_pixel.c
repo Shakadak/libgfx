@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/23 14:55:45 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/23 14:55:47 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/23 15:29:24 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ t_pix	new_pixel(t_pos const pos, t_color const color)
 
 	new.pos = pos;
 	new.color = color;
-	return (color);
+	return (new);
 }
