@@ -6,11 +6,11 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 13:58:43 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/22 13:58:53 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/23 13:11:41 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libmlx.h"
+#include "libumlx.h"
 
 void	put_pixel_to_image(t_img *img,
 		t_pix const pixel)

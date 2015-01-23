@@ -6,11 +6,11 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 14:11:09 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/22 18:40:17 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/23 13:10:51 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libmlx.h"
+#include "libumlx.h"
 
 t_color	linear_interpolation(t_pix const target,
 		t_pix const start,

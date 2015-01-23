@@ -6,11 +6,11 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 18:45:13 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/22 19:24:44 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/23 13:11:29 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libmlx.h"
+#include "libumlx.h"
 
 void	apply_image(t_win const *win, t_img const *img, t_pos const origin)
 {

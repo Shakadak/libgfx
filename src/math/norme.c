@@ -6,12 +6,12 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 16:13:54 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/22 16:44:41 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/23 13:11:20 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include "libmlx.h"
+#include "libumlx.h"
 
 double	norme(t_pos const a, t_pos const b)
 {

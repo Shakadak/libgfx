@@ -6,11 +6,11 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 11:01:29 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/22 11:06:01 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/23 13:11:05 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libmlx.h"
+#include "libumlx.h"
 
 t_img	new_image(void *mlx, int width, int height)
 {

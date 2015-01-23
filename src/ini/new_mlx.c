@@ -6,11 +6,11 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 10:54:17 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/22 10:56:22 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/23 13:11:11 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libmlx.h"
+#include "libumlx.h"
 
 void	*new_mlx(void)
 {
