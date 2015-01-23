@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 11:26:29 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/23 14:00:51 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/23 14:05:57 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,8 +70,8 @@ void				clear_image(t_img *img);
 
 void				draw_line(t_img *img, t_pix start, t_pix end);
 
-void				apply_image(t_win const *win,
-		t_img const *img,
+void				apply_image(t_win const win,
+		t_img const img,
 		t_pos const origin);
 
 
