@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 10:54:17 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/23 13:11:11 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/23 19:16:14 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	*new_mlx(void)
 {
 	void	*mlx;
+
 	mlx = mlx_init();
 	if (mlx == NULL)
 		ft_fatal("mlx_init", 1);

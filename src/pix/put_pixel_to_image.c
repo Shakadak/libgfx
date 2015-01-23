@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 13:58:43 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/23 15:30:01 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/23 19:13:52 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	put_pixel_to_image(t_img const img,
 	color = pixel.color.id;
 	pos = pixel.pos.y * img.lsize
 	+ pixel.pos.x * (img.bits / 8);
-	img.data[pos] = color &255;
-	img.data[pos + 1] = color >> 8 &255;
-	img.data[pos + 2] = color >> 16 &255;
+	img.data[pos] = color & 255;
+	img.data[pos + 1] = color >> 8 & 255;
+	img.data[pos + 2] = color >> 16 & 255;
 }
