@@ -6,11 +6,11 @@
 #    By: npineau <npineau@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 12:15:41 by npineau           #+#    #+#              #
-#    Updated: 2015/01/22 17:09:47 by npineau          ###   ########.fr        #
+#    Updated: 2015/01/23 13:01:48 by npineau          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		:=	libmlx.a
+NAME		:=	libumlx.a
 
 ### DIRECTORIES ###
 
@@ -26,7 +26,7 @@ DIRFT		:=	../libft
 
 ### FILES ###
 
-INC			:=	$(DIRINC)/libmlx.h
+INC			:=	$(DIRINC)/libumlx.h
 LIBFT		:=	$(DIRFT)/libft.a
 
 ### FILES: SOURCES ###
@@ -40,7 +40,6 @@ include $(DIRCOL)/sources.mk
 ### FILES: PATHS ###
 
 POBJ		:=	$(addprefix $(DIROBJ)/, $(OBJ))
-INC			:=	$(DIRINC)/libmlx.h
 
 ### ARCHIVE ###
 
