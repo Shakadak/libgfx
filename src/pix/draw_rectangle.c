@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/26 11:49:06 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/26 11:53:36 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/27 13:17:48 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	draw_rectangle(t_img const img, t_pix const start, t_pix const end)
 	bot.color = end.color;
 	while (bot.pos.x <= end.pos.x)
 	{
-		draw_line(img, top, bot);
+		draw_basic_line(img, top, bot);
 		bot.pos.x += 1;
 		top.pos.x += 1;
 	}

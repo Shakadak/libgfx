@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 11:26:29 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/26 11:50:58 by npineau          ###   ########.fr       */
+/*   Updated: 2015/01/27 13:19:30 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,12 @@ t_pos				new_pos(int const x, int const y, int const z);
 t_pix				new_pixel(t_pos const pos, t_color const color);
 void				put_pixel_to_image(t_img img, t_pix const pixel);
 void				clear_image(t_img img);
-void				draw_line(t_img img, t_pix start, t_pix end);
+void				draw_line(t_img const img,
+		t_pix const start,
+		t_pix const end);
+void			draw_basic_line(t_img const img,
+		t_pix const start,
+		t_pix const end);
 void				draw_rectangle(t_img const img,
 		t_pix const start,
 		t_pix const end);
