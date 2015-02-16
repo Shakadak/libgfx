@@ -15,13 +15,11 @@
 void	put_pixel_to_image(t_img const img,
 		t_pix const pixel)
 {
-	int	color;
 	int	pos;
 
 	if (pixel.pos.x < 0 || pixel.pos.x >= img.width
 			|| pixel.pos.y < 0 || pixel.pos.y >= img.height)
 		return ;
-	color = pixel.color.id;
 	pos = pixel.pos.y * img.lsize
 	+ pixel.pos.x * (img.bits / 8);
 	img.data[pos] = pixel.color.rgb[3];
