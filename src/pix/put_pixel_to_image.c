@@ -17,8 +17,8 @@ void	put_pixel_to_image(t_img const img,
 {
 	int	pos;
 
-	if (pixel.pos.x < 0 || pixel.pos.x >= img.width
-			|| pixel.pos.y < 0 || pixel.pos.y >= img.height)
+	if (pixel.pos.x < 0 || pixel.pos.x >= img.dim.x
+			|| pixel.pos.y < 0 || pixel.pos.y >= img.dim.x)
 		return ;
 	pos = pixel.pos.y * img.lsize
 	+ pixel.pos.x * (img.bits / 8);

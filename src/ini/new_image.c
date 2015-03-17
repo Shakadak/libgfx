@@ -20,7 +20,6 @@ t_img	new_image(void *mlx, int width, int height)
 	if (img.img == NULL)
 		ft_fatal("mlx_new_image", 1);
 	img.data = mlx_get_data_addr(img.img, &img.bits, &img.lsize, &img.endian);
-	img.width = width;
-	img.height = height;
+	img.dim = new_pos(width, height, 0);
 	return (img);
 }

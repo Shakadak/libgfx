@@ -13,7 +13,7 @@
 #ifndef LIBUMLX_H
 # define LIBUMLX_H
 
-# include <mlx.h>
+# include <../../minilibx/mlx.h>
 # include <string.h>
 
 typedef struct		s_pos
@@ -38,8 +38,7 @@ typedef struct		s_pix
 typedef struct		s_img
 {
 	void			*img;
-	int				width;
-	int				height;
+	t_pos			dim;
 	char			*data;
 	int				bits;
 	int				lsize;
@@ -50,8 +49,7 @@ typedef struct		s_win
 {
 	void			*mlx;
 	void			*win;
-	int				width;
-	int				height;
+	t_pos			dim;
 	char			*title;
 }					t_win;
 

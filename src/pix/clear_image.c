@@ -15,5 +15,5 @@
 
 void	clear_image(t_img const img)
 {
-	ft_bzero(img.data, img.width * img.height * img.bits / 8);
+	ft_bzero(img.data, img.dim.x * img.dim.y * img.bits / 8);
 }

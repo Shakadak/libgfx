@@ -20,8 +20,7 @@ t_win	new_window(void *mlx, int width, int height, char *title)
 	if (win.win == NULL)
 		ft_fatal("mlx_new_window", 1);
 	win.mlx = mlx;
-	win.width = width;
-	win.height = height;
+	win.dim = new_pos(width, height, 0);
 	win.title = title;
 	return (win);
 }
