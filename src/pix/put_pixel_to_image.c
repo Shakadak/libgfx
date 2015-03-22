@@ -6,10 +6,12 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 13:58:43 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/26 12:00:19 by npineau          ###   ########.fr       */
+/*   Updated: 2015/03/22 16:05:44 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>////////////
+#include "libft.h"
 #include "libumlx.h"
 
 void	put_pixel_to_image(t_img const img,
@@ -17,12 +19,10 @@ void	put_pixel_to_image(t_img const img,
 {
 	int	pos;
 
-	if (pixel.pos.x < 0 || pixel.pos.x >= img.dim.x
+/*	if (pixel.pos.x < 0 || pixel.pos.x >= img.dim.x
 			|| pixel.pos.y < 0 || pixel.pos.y >= img.dim.x)
-		return ;
+		return ;*/
 	pos = pixel.pos.y * img.lsize
 	+ pixel.pos.x * (img.bits / 8);
-	img.data[pos] = pixel.color.rgb[3];
-	img.data[pos + 1] = pixel.color.rgb[2];
-	img.data[pos + 2] = pixel.color.rgb[1];
+	ft_memcpy(img.data + pixel.pos.y * img.lsize + pixel.pos.x * img.bits / 8, &pixel.color, img.bits / 8);
 }
