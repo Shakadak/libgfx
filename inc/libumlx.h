@@ -6,14 +6,14 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 11:26:29 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/30 18:07:47 by npineau          ###   ########.fr       */
+/*   Updated: 2015/03/22 10:05:53 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBUMLX_H
 # define LIBUMLX_H
 
-# include <../../minilibx/mlx.h>
+# include <mlx.h>
 # include <string.h>
 
 typedef struct		s_pos
