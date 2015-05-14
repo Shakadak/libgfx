@@ -6,13 +6,16 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 18:40:32 by npineau           #+#    #+#             */
-/*   Updated: 2015/03/23 17:04:26 by npineau          ###   ########.fr       */
+/*   Updated: 2015/05/14 14:38:46 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libumlx.h"
 
-t_color	new_color(char const b, char const g, char const r, char const a)
+t_color	new_color(unsigned char const b,
+		unsigned char const g,
+		unsigned char const r,
+		unsigned char const a)
 {
 	t_color	new;
 

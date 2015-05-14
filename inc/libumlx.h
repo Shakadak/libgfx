@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 11:26:29 by npineau           #+#    #+#             */
-/*   Updated: 2015/03/23 17:07:56 by npineau          ###   ########.fr       */
+/*   Updated: 2015/05/14 14:36:07 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,10 @@ void				draw_rectangle(t_img const img,
 void				apply_image(t_win const win,
 		t_img const img,
 		t_pos const origin);
-t_color				new_color(char const b, char const g, char const r, char const a);
+t_color				new_color(unsigned char const b,
+		unsigned char const g,
+		unsigned char const r,
+		unsigned char const a);
 t_color				linear_interpolation(t_pix const target,
 		t_pix const start,
 		t_pix const end);
