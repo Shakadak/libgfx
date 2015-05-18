@@ -6,7 +6,7 @@
 #    By: npineau <npineau@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 12:15:41 by npineau           #+#    #+#              #
-#    Updated: 2015/01/23 13:01:48 by npineau          ###   ########.fr        #
+#    Updated: 2015/05/18 18:13:29 by npineau          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,6 +64,7 @@ all: $(NAME)
 
 $(NAME): $(POBJ)
 	$(AR_EXEC)
+	ranlib $(NAME)
 
 $(LIBFT):
 	$(MAKE) -C $(DIRFT)
