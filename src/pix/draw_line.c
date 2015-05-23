@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 13:25:45 by npineau           #+#    #+#             */
-/*   Updated: 2015/01/27 13:20:35 by npineau          ###   ########.fr       */
+/*   Updated: 2015/05/23 18:15:31 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,11 @@ static void		update_pixel_pos(t_pos *current,
 	}
 }
 
+static double distance(t_pos const target, t_pos const start, t_pos const end)
+{
+	return (norme(start, target) / norme(start, end));
+}
+
 void			draw_line(t_img const img,
 		t_pix const start,
 		t_pix const end)
@@ -67,7 +72,8 @@ void			draw_line(t_img const img,
 		put_pixel_to_image(img, current);
 		error.y = error.x;
 		update_pixel_pos(&current.pos, step, delta, &error);
-		current.color = linear_interpolation(current, start, end);
+		current.color = linear_interpolation(start.color, end.color,
+				distance(current.pos, start.pos, end.pos));
 	}
 	put_pixel_to_image(img, current);
 }
