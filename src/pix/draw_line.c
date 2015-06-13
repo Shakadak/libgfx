@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 13:25:45 by npineau           #+#    #+#             */
-/*   Updated: 2015/06/13 21:03:38 by npineau          ###   ########.fr       */
+/*   Updated: 2015/06/13 21:14:00 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static void		update_pixel_pos(t_pos *current,
 	}
 }
 
-static			double distance(t_pos const target, t_pos const start, t_pos const end)
+static double	distance(t_pos const target, t_pos const start, t_pos const end)
 {
 	return (norme(start, target) / norme(start, end));
 }
