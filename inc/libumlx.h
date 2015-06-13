@@ -6,7 +6,7 @@
 /*   By: npineau <npineau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 11:26:29 by npineau           #+#    #+#             */
-/*   Updated: 2015/05/23 18:09:35 by npineau          ###   ########.fr       */
+/*   Updated: 2015/06/13 21:03:12 by npineau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ t_color				new_color(unsigned char const b,
 		unsigned char const g,
 		unsigned char const r,
 		unsigned char const a);
-t_color	linear_interpolation(t_color const src,
+t_color				linear_interpolation(t_color const src,
 		t_color const end,
 		double const factor);
 double				norme(t_pos const a, t_pos const b);
