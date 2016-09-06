@@ -1,4 +1,5 @@
-MATH	:=	norme.c
+MATH	:=	norme.c \
+			interpolate.c
 
 OBJ := $(OBJ) $(MATH:.c=.o)
 
